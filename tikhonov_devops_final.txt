@@ -1,0 +1,11 @@
+Действия:
+1) Просмотрел историю команд bash (.bash_history)
+Обнаружил, что была введена команда "halt"
+2) Зашел в каталог "Work" и проверил файлы кода, который необходимо скомпилировать, чтобы посмотреть сам код.
+3) При попытке скомпилировать "app.cpp" была выведена следующая ошибка:
+usr/bin/ld: /tmp/ccGkauzx.o: in function `main':
+app.cpp:(.text+0x169): undefined reference to `Math::add(double, double)'
+/usr/bin/ld: app.cpp:(.text+0x18e): undefined reference to `Math::subtract(double, double)'
+/usr/bin/ld: app.cpp:(.text+0x1b0): undefined reference to `Math::multiply(double, double)'
+/usr/bin/ld: app.cpp:(.text+0x1d2): undefined reference to `Math::divide(double, double)'
+collect2: error: ld returned 1 exit status
